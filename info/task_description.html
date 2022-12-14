@@ -41,7 +41,7 @@
 <p>
     <strong>Preconditions:</strong>
     <ul>
-        <li><i>beginning operations are ignored;</i></li>
+        <li><i>beginning operations are ignored, incl. "BCASGE";</i></li>
         <li><i>beginning zeros should be removed, only-zeros number - converted to single zero;</i></li>
         <li><i>among +- signs between numbers, the last one should be taken;</i></li>
         <li><i>"==" means repeating the last operation;</i></li>
@@ -54,6 +54,6 @@
         <li><i>for float, beginning and trailing zeros should be removed (until the "." of possible): 0.1200 -> .12 ,  123.00 -> 123. . It should be done after the rounding: 1.000123 -> 1;</i></li>
         <li><i>when after B's no signs remain and new digits are pressed - concatenate with the previous number: 12+B3 -> 123 ;</i></li>
         <li><i>"A"/"S" increase/decrease memory by previous number with cleaning the output;</i></li>
-        <li><i>"G" insert memory value if used after operation, clean output and insert value othewise.</i></li>
+        <li><i>"G" insert memory value if used after operation, clean output and insert value otherwise.</i></li>
     </ul>
 </p>

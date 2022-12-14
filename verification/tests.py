@@ -10,6 +10,23 @@ Each test is a dict with
 
 TESTS = {
     "Basics": [
+        # seventh
+        {
+            "input": ["100A90S"],
+            "answer": "",
+        },
+        {
+            "input": ["100A90SG"],
+            "answer": "10",
+        },
+        {
+            "input": ["100A90EG"],
+            "answer": "0",
+        },
+        {
+            "input": ["ASG"],
+            "answer": "",
+        },
         # sixth
         {
             "input": ["123BB"],
@@ -187,6 +204,27 @@ TESTS = {
         },
     ],
     "Extra": [
+        # seventh
+        {
+            "input": ["36/5AG"],
+            "answer": "5",
+        },
+        {
+            "input": ["36/5*A5*G=B"],
+            "answer": "36",
+        },
+        {
+            "input": ["10*=A80S2*G+="],
+            "answer": "80",
+        },
+        {
+            "input": ["12**2AG"],
+            "answer": "2",
+        },
+        {
+            "input": ["12**2-AG"],
+            "answer": "144",
+        },
         # sixth
         {
             "input": ["999*=C99*=B"],
