@@ -174,8 +174,8 @@ TESTS = {
         },
         {
             "input": [""],
-            "answer": "",
-            "explanation": "no input",
+            "answer": "0",
+            "explanation": "when power on - 0 on the screen",
         },
         {
             "input": ["1+2"],
@@ -201,6 +201,10 @@ TESTS = {
             "input": ["1+2=2"],
             "answer": "2",
             "explanation": "entering number rewrites previous result",
+        },
+        {
+            "input": ["=5=10=15"],
+            "answer": "15",
         },
     ],
     "Extra": [
@@ -366,10 +370,6 @@ TESTS = {
         {
             "input": ["-5-10+15-"],
             "answer": "10",
-        },
-        {
-            "input": ["=5=10=15"],
-            "answer": "15",
         },
         {
             "input": ["+1+2+3+4="],
