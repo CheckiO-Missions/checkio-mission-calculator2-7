@@ -13,7 +13,7 @@ TESTS = {
         # seventh
         {
             "input": ["100A90S"],
-            "answer": "",
+            "answer": "0",
         },
         {
             "input": ["100A90SG"],
@@ -25,7 +25,7 @@ TESTS = {
         },
         {
             "input": ["ASG"],
-            "answer": "",
+            "answer": "0",
         },
         # sixth
         {
