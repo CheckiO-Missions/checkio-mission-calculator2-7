@@ -1,0 +1,61 @@
+<!-- Describe task in general -->
+
+<p style="float: left; margin: 10px;">
+    <a href="https://www.vecteezy.com/free-vector/calculator"><img title="example" src="{{MEDIA}}calc.png" alt="example" style="max-height: 200px"/></a> 
+</p>
+<p>
+    <i>惠普 12c 财务计算器仍在生产。它于 1981 年推出，目前仍在生产，几乎没有什么变化。惠普 12c 采用反向波兰符号模式输入数据。2003 年发布了几款新机型，其中包括 HP 12c 的改进版 "HP 12c 白金版"，它增加了更大的内存、更多的内置功能，并增加了数据输入的代数模式。<a href="https://en.wikipedia.org/wiki/Calculator" target="_blank">Find more on wikipedia page...</a></i>
+</p>
+<p>
+    在本系列任务中，您将制作一个初级计算器。
+</p>
+<p>
+    作为输入，您需要按下一连串的键，而作为该功能的结果，您应显示按下最后一个键时屏幕上将显示的内容。注意，这并不总是表达式的结果。实际上，使用实物计算器或应用程序确实有助于你捕捉边缘情况。
+</p>
+<p>
+    在第七个任务中，内存应执行以下操作：大写 "A"（加，+）、大写 "S"（减，-）、大写 "G"（取值）和大写 "E"（擦除内存）。
+</p>
+<p>
+    <strong>预期行为</strong>
+    <ul>
+        <li><i>应删除开头的零，将仅有零的数字转换为单个零；</i></li>
+        <li><i>数字间的 +- 符号应取最后一个；</i></li>
+        <li><i>"=="表示重复上次操作；</i></li>
+        <li><i>"+="或"-="--在组合前对数字（或运算结果）进行加减运算（将数字加倍或减去本身）；</i></li>
+        <li><i>计算器忽略在第 5 位之后输入的数字；</i></li>
+        <li><i>数字 &lt; 0 的"-"不占位数；</i></li>
+        <li><i>如果 abs(结果)大于 99999，结果显示为 "错误"；</i></li>
+        <li><i>对于浮点数，如果 abs(结果) 的整数部分大于 9999，则结果显示为 "错误"；</i></li>
+        <li><i>对于 float，如果数字的总长度超过 5 位数，则应四舍五入到 5 位数（1.23456 -&gt; 1.235）；</i></li>
+        <li><i>对于浮点数，应去掉开头和尾部的零（如果可能，去掉". "之前的零）： 0.1200 -&gt; .12 , 123.00 -&gt; 123..应在四舍五入后进行： 1.000123 -&gt; 1. .只有在输入数字结束后（按下非数字字符），才能删除尾部的零；</i></li>
+        <li><i>当 B 字符后没有符号且新数字被按下时 - 与前一个数字连接：12+B3 -&gt; 123 ；</i></li>
+        <li><i>A"/"S "按前一个数字增加/减少内存，并清除输出；</i></li>
+        <li><i>G "在操作后插入内存值，否则清洁输出并插入内存值。</i></li>
+    </ul>
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>字符串。
+</p>
+<p>
+   <strong>输出： 字符串</strong>字符串。
+</p>
+<p>
+    <strong>示例：字符串</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>如何使用</strong>
+    <i>计算器被广泛使用。了解其输入和输出的原理既有趣又有用。</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件：</strong>
+    <i>允许使用的字符：数字（0-9）、点（.）、符号 +、-、=、*、/、//、%、** 及其组合（+=、+-、==、%= 等）、字母 "B"、"C"、"A"、"S"、"G"、"E"。整数不得超过 5 位，浮点数为 4。</i>
+</p>
